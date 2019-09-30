@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing things</title>
+    </head>
+    <style>
+        /*Basic CSS*/
+        body {
+            text-align: center;
+            margin: 15%;
+            color: brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 48px;
+        }
+    
+        .button {
+            background-color: chocolate;
+            border: 25%;
+            border-color: black;
+            color: darkblue;
+            padding: 25px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+        }
+
+        .button:hover {
+                background-color: bisque;
+                color: white;
+        }
+    </style>
+    <body>
+        <p><strong>Click the button to demostrate the prompt box bro.</strong></p>
+    <button class="button" onclick="myFunction()">Try it!</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var person =prompt("Please enter your name " , " Grace Hooper ");
+        if (person !=null) {
+            document.getElementById("demo").innerHTML =
+            "Hello " + person + " .How are ya doing today?";
+        }
+        }
+    </script>
+    
+    </body>
+</html>
